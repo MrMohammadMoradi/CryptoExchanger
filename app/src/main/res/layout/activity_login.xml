@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:layoutDirection="rtl"
+    >
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@mipmap/loginimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:contentDescription="image"
+        />
+
+    <TextView
+        android:id="@+id/userLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نام کاربری :"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_below="@+id/loginImage"
+        />
+
+    <EditText
+        android:id="@+id/usernameEDT"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="نام کاربری خود را وارد کنید"
+        android:textSize="20sp"
+        android:layout_below="@+id/userLable"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="90dp"
+        />
+
+    <TextView
+        android:id="@+id/passwordLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رمزعبور :"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@+id/usernameEDT"
+        />
+
+    <EditText
+        android:id="@+id/passwordEDT"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="رمزعبور خود را وارد کنید"
+        android:inputType="textPassword"
+        android:textSize="21sp"
+        android:layout_below="@+id/passwordLable"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="90dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkForSaveLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEDT"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:text="ذخیره اطلاعات برای ورود خودکار"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/loginBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ورود"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/checkForSaveLogin"
+        android:layout_marginTop="25dp"
+        android:onClick="LoginToAccount"
+        />
+
+
+</RelativeLayout>
